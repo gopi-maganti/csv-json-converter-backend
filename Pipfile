@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pydantic = "*"
+flask = "*"
+flasgger = "*"
+werkzeug = "*"
+pytest = "*"
+coverage = "*"
+isort = "*"
+black = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+isort = "*"
+black = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+format = "black ."
+dev = "python run.py"
+test = "cmd /c \"coverage run -m pytest && coverage report -m\""
